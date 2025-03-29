@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventana Inicial</title>
+  <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+  <h2>Ingrese sus Datos</h2>
+  
+  <!-- Formulario para capturar el nombre y número de control -->
+  <form id="formulario">
+    <div class="botones">
+      <label for="nombre">Nombre: </label>
+      <input type="text" id="nombre" required>
+    </div>
+    <div class="botones">
+      <label for="numeroControl">Número de Control: </label>
+      <input type="text" id="numeroControl" required>
+    </div>
+    <div class="botones">
+      <button type="button" onclick="enviarDatos()">Enviar Datos</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

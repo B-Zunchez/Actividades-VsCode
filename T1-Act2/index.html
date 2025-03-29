@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manejo de Ventanas</title>
+  <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+  <h2>Ejemplo de Manejo de Ventanas</h2>
+  
+  <!-- Botón para abrir ventana Pop -->
+  <div class="botones">
+    <button onclick="abrirVentanaPop()">Abrir Ventana Pop (Popup)</button>
+  </div>
+  
+  <!-- Botón para abrir ventana con _blank -->
+  <div class="botones">
+    <button onclick="abrirVentana()">Abrir Nueva Ventana (_blank)</button>
+  </div>
+  
+  <!-- Botón para cambiar la ventana dentro de la misma -->
+  <div class="botones">
+    <button onclick="abrirVentanaDentroDeLaMisma()">Cambiar de Ventana (window.location.href)</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

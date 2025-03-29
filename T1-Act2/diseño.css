@@ -1,0 +1,33 @@
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    justify-content: flex-start; /* Alinearlos desde la parte superior */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .botones {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;  /* Asegura que los botones tengan un tamaño constante */
+  }
+  
+  button:hover {
+    background-color: #5a6268;
+  }
+  

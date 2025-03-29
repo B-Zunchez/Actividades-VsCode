@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrusel de Imágenes</title>
+  <link rel="stylesheet" href="diseño.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Carrusel de 8 Imágenes</h1>
+
+  <div class="carrusel-container">
+    <div class="carrusel" id="carrusel">
+      <img src="Picture1.png" alt="Imagen 1" />
+      <img src="Picture2.png" alt="Imagen 2" />
+      <img src="Picture3.png" alt="Imagen 3" />
+      <img src="Picture4.png" alt="Imagen 4" />
+      <img src="Picture5.png" alt="Imagen 5" />
+      <img src="Picture6.png" alt="Imagen 6" />
+      <img src="Picture7.png" alt="Imagen 7" />
+      <img src="Picture8.png" alt="Imagen 8" />
+    </div>
+  </div>
+
+  <div class="controles">
+    <button onclick="anterior()">⏪ Anterior</button>
+    <button onclick="siguiente()">Siguiente ⏩</button>
+    <button onclick="reducirVelocidad()">- Velocidad</button>
+    <button onclick="aumentarVelocidad()">+ Velocidad</button>
+  </div>
+
+</body>
+</html>

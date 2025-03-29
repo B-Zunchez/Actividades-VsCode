@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.carrusel-container {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+
+.carrusel {
+  display: flex;
+  height: 100%;
+  width: 100%; /* 8 imágenes = 800% */
+}
+
+.carrusel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex: 0 0 100%; /* Cada imagen ocupa el 100% del carrusel-container */
+}
+
+.controles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+button {
+  flex: 1 1 40%;
+  min-width: 140px;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:active{
+  background-color: #004f9a;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .carrusel-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .controles {
+    flex-direction: column;
+  }
+}

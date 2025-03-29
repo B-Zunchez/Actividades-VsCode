@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Ubicación</title>
+  <link rel="stylesheet" href="diseño.css" />
+  <script src="script.js" defer></script>
+  <!-- Carga de la API de Google Maps -->
+  <script
+  async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnnudt2r5ZLI7dXKc4xarU6aTR1m9Jsww&callback=inicializarMapa"
+  ></script>
+</head>
+<body>
+  <h1>Ver mi ubicación</h1>
+  <button onclick="obtenerUbicacion()">Obtener Ubicación</button>
+  <div id="ubicacion"></div>
+  <div id="mapa"></div>
+</body>
+</html>

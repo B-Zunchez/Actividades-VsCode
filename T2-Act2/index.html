@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones con Doble Clic</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Primer fila de botones -->
+        <div class="row">
+            <button class="option-btn" ondblclick="mostrarOpcion(1)">Opción 1</button>
+            <button class="option-btn" ondblclick="mostrarOpcion(2)">Opción 2</button>
+            <button class="option-btn" ondblclick="mostrarOpcion(3)">Opción 3</button>
+            <button class="option-btn" ondblclick="mostrarOpcion(4)">Opción 4</button>
+            <button class="option-btn" ondblclick="mostrarOpcion(5)">Opción 5</button>
+        </div>
+        
+        <!-- Segunda fila de botones -->
+        <div class="row">
+            <button class="option-btn" ondblclick="mostrarOpcion(6)">Opción 6</button>
+            <button class="option-btn" ondblclick="mostrarOpcion(7)">Opción 7</button>
+            <button class="option-btn" ondblclick="mostrarOpcion(8)">Opción 8</button>
+            <button class="option-btn" ondblclick="mostrarOpcion(9)">Opción 9</button>
+            <button class="option-btn" ondblclick="mostrarOpcion(10)">Opción 10</button>
+        </div>
+
+        <!-- Botón "Salir" -->
+        <div class="row">
+            <button id="salir-btn">Salir</button>
+        </div>
+    </div>
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>¿Estás seguro de que quieres salir?</p>
+            <button id="confirmExit">Sí, salir</button>
+            <button onclick="closeModal()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador y Escáner de QR</title>
+  <link rel="stylesheet" href="diseño.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>QR Generator & Scanner</h1>
+
+  <section>
+    <h2>Generador de QR</h2>
+    <input type="text" id="textoQR" placeholder="Ingresa texto o enlace" />
+    <button onclick="generarQR()">Generar QR</button>
+    <div id="qrcode"></div>
+  </section>
+
+  <section>
+    <h2>Escáner de QR</h2>
+    <button onclick="iniciarEscaneo()">Iniciar Escaneo</button>
+    <button onclick="detenerEscaneo()">Detener Escaneo</button>
+    <div id="reader"></div>
+    <p><strong>Resultado:</strong> <span id="resultadoScan"></span></p>
+  </section>
+</body>
+</html>
