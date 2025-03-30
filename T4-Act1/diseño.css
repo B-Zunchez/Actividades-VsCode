@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+  padding: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #004f9a;
+  transform: scale(0.98);
+}
+
+.contenedor-recetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.receta {
+  background: #fff;
+  border-radius: 10px;
+  width: 260px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.receta img {
+  display: block;
+  width: 100%;
+  height: 160px; /* Tamaño fijo */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.receta h2 {
+  color: #0066cc;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .receta {
+    width: 90%;
+  }
+
+  form {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  input, textarea, button {
+    font-size: 1rem;
+  }
+}
