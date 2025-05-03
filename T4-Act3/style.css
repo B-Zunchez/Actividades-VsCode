@@ -61,18 +61,18 @@ button:active {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
 }
 
 .tarea {
   background: white;
-  padding: 15px;
+  padding: 20px;
   text-align: left;
   border: 1px solid #ddd;
 }
 
 .tarea input, .tarea select {
-  width: 100%;
+  width: 97%;
   margin-top: 5px;
 }
 
@@ -87,7 +87,7 @@ button:active {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   form, .filtros, #lista-tareas {
     width: 90%;
   }
