@@ -27,7 +27,6 @@ function saveReceta(recetas) {
   localStorage.setItem("recetas", JSON.stringify(recetas));
 }
 
-// Renderizar todas las recetas
 function showRecetas() {
   const recetas = obtenerRecetas();
   contenedor.innerHTML = "";
@@ -44,7 +43,6 @@ function showRecetas() {
   });
 }
 
-// Manejar formulario
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const nombre = document.getElementById("nombre").value;

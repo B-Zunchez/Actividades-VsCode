@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-do Escolar Firebase</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <h1>Mis Tareas Escolares</h1>
+
+  <div class="filtros">
+    <select id="filtro-status">
+      <option value="todos">Ver todas</option>
+      <option value="pendiente">Solo pendientes</option>
+      <option value="entregada">Solo entregadas</option>
+      <option value="calificada">Solo calificadas</option>
+      <option value="archivada">Solo archivadas</option>
+    </select>
+  </div>
+
+  <div id="lista-tareas"></div>
+
+  <button id="btn-nueva-tarea">Agregar nueva tarea</button>
+
+  <form id="form-tarea" class="oculto">
+    <input type="hidden" id="id-edicion" />
+    <input type="text" id="descripcion" placeholder="Descripción de la tarea" required />
+    <input type="text" id="materia" placeholder="Materia" required />
+    <input type="text" id="tema" placeholder="Tema" required />
+    <input type="number" id="valor" placeholder="% de valor" required />
+    <input type="date" id="fecha" required />
+    <select id="status">
+      <option value="pendiente">Pendiente</option>
+      <option value="entregada">Entregada</option>
+      <option value="calificada">Calificada</option>
+    </select>
+    <input type="number" id="calificacion" placeholder="Calificación /100" min="0" max="100" class="oculto" />
+    <button type="submit">Guardar tarea</button>
+  </form>
+</body>
+</html>
